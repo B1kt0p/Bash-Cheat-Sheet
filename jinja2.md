@@ -37,6 +37,7 @@ print(tmpl.render(rt01))
 Environment - the main class for describing the environment
 
 ###  Loader - template loader
+```python
 • FileSystemLoader(directory) - loader from the file system, the argument is the directory containing the templates.
 env.get_template(template_filename)  
 • DictLoader(dict) - loads from a dictionary. The keys are the template names, the values ​​are the templates themselves.
