@@ -12,9 +12,9 @@
 
 ## Template
 ! from jinja2 import Template
-render - generates a document based on the loaded template (substituting the query into the template)
-The dictionary name keys and functions must match the function names in the template
-The dictionary name keys and functions must match the function names in the template
+render - generates a document based on the loaded template (substituting the query into the template)  
+The dictionary name keys and functions must match the function names in the template  
+The dictionary name keys and functions must match the function names in the template  
 
 ```python
 rom jinja2 import Template
