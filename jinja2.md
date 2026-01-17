@@ -46,7 +46,7 @@ env.get_template("template_name")
 string (or None)  
 env.get_template("func_arg")  
 • ChoiceLoader([loader1, loader2]) - combines several loaders and tries them one by one  
-```python
+
 loader1 = FileSystemLoader("./templates1")
 loader2 = FileSystemLoader("./templates2")
 loader = ChoiceLoader([loader1, loader2])
