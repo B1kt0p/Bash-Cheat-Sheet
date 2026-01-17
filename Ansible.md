@@ -5,7 +5,6 @@
 ## Ansible ad-hoc
 
 ```bash
-!!            # Run the last command
 exe@ansible:$ ansible \ host01 \
 -i hosts.ini \
 -u user \
