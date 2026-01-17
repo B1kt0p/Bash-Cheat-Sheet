@@ -92,16 +92,16 @@ config = env.get_template(device["type"]).render(device) with open(f"03.result.{
 ```
 
 ### Jinja2. For Loop
-
+```python
 • Defined in the {% ... %} statement block   
 • Starts with {% for ... %} and ends with {% endfor %}   
 Can iterate over both lists and dictionary statements   
-
+```
 ### JJinja2. If Condition
-
+```python
 • Defined in the {% ... %} statement block    
 • Starts with {% if ... %} and ends with {% endif %} • {% elif ... %} and {% else %} for alternative branches   
-
+```
 ## Jinja2. Whitespace Control
 
 • trim_blocks - removes the first line break after a block
