@@ -186,10 +186,10 @@ sudo chmod -R 755 /opt/zabbix/modules
 | postgres      | postgres  | 999:999   | 700       |
 | server        | zabbix    | 1997:1997 | 750       |
 | web-conf      | web       | 1000:1000 | 750 → 550 |
-| config/server | никто     | root      | 755       |
-| config/agent  | никто     | root      | 755       |
-| scripts       | никто     | root      | 750       |
-| modules       | никто     | root      | 755       |
+| config/server | None      | root      | 755       |
+| config/agent  | None      | root      | 755       |
+| scripts       | None      | root      | 750       |
+| modules       | None      | root      | 755       |
 
 
 Check:
