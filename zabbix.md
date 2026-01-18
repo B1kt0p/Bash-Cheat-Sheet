@@ -2,7 +2,7 @@
 
  A cheat sheet for Zabbix
 
-## Install Zabbix in docker (for test)
+## Install Zabbix in docker (for test, WARRING: docker-compose content passwords)
 
 ```yaml
 version: '3.8'
