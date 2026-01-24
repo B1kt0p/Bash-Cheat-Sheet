@@ -495,6 +495,17 @@ ssh -i foo.pem hostname      # Connect to hostname using the identity file
 ssh user@hostname            # Connect to hostname using the user over the default SSH port 22
 ssh user@hostname -p 8765    # Connect to hostname using the user over a custom port
 ssh ssh://user@hostname:8765 # Connect to hostname using the user over a custom port
+ssh -N -R 8080:localhost:80 user@vps_ip  # Remote port forwarding
+ssh -L 8000:localhost:8080 user@vps_ip  # takes port from the VPS and forwards it to your current computer
+ssh -J user@vps_ip root@localhost -p 2222 # Jupm to another host
+ssh -N -o "ServerAliveInterval 30" -o "ExitOnForwardFailure=yes"  user@vps_ip # change ssh parameters 
+
+-N: Do not execute commands on the server (tunneling only).
+-R: Remote port forwarding. Traffic received on port 8080 of your VPS will be forwarded to port 80 of your router.
+-L: Takes port from the VPS and forwards it to your current computer
+-o: Change ssh parameter
+- AllowTcpForwarding yes - Allow TCP redirection
+- GatewayPorts yes - The SSH server binds the forwarded port to all VPS network interfaces.
 ```
 
 Set default user and port in `~/.ssh/config`, so you can just enter the name next time:
@@ -691,3 +702,4 @@ case $weather in
   ;;
 esac
 ```
+
