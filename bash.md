@@ -280,6 +280,7 @@ gunzip -k|--keep foo.gz # Unzip foo.gz into current directory
 ```bash
 tar -x|--extract -z|--gzip -f|--file=foo.tar.gz # Un-compress foo.tar.gz into current directory
 tar -x|--extract -f|--file=foo.tar              # Un-combine foo.tar into current directory
+tar --zstd -xvf foo.tar.zst                     # Un-combine foo.tar.zst into current director
 ```
 
 ## Disk Usage
@@ -702,4 +703,5 @@ case $weather in
   ;;
 esac
 ```
+
 
