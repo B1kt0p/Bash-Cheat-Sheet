@@ -17,7 +17,7 @@ The dictionary name keys and functions must match the function names in the temp
 The dictionary name keys and functions must match the function names in the template  
 
 ```python
-rom jinja2 import Template
+from jinja2 import Template
 rt01 = {
     "hostname": "rt-01-dc",
     "mgmt_ip": "10.255.255.32",
